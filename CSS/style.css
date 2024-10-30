@@ -1,0 +1,277 @@
+
+/* Start Global Rules */
+*{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;  /* child doesn't go out of the parent  "contain box"*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    scroll-behavior: smooth;
+}
+body{
+font-family: 'Poppins', sans-serif;
+font-family: 'Work Sans', sans-serif;
+}
+/* End Global Rules */
+header
+{
+    width: 100%;
+    background-color: rgb(232, 217, 217);
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content:space-between;
+    padding: 10px 200px;
+    align-items: center;
+}
+.logo{
+text-decoration: none;
+font-size: 1.8em;
+font-weight: 700;
+text-transform: uppercase;
+color: blueviolet;
+}
+.navigation a
+{
+    font-size: 1.1em;
+    font-weight: 400;
+    padding-left: 30px;
+    text-transform: uppercase;
+    color: blueviolet;
+    text-decoration: none;
+}
+.navigation a:hover
+{
+color:blue;
+}
+section
+{
+    padding: 200px;
+}
+.main-btn
+{
+    background-color: rgb(131, 15, 239);
+    color: white;
+    padding: 11px;
+    display: inline-block;
+    margin: 1.1em 0;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1em;
+    letter-spacing: 1px;
+    transition: .7s ease;
+}
+.main-btn:hover
+{
+    font-weight: 500;
+    transform:scale(1.1);
+    background-color: blue;
+}
+.main h2{
+    font-size: 1.4em;
+    color: black;
+}
+.main h2 span
+{
+    display: inline-block;
+    color: white;
+    font-size: 1.8em;
+    margin: .2em 0;
+    font-weight: 700;
+}
+.main h3{
+    color: rgb(193, 128, 255);
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    font-weight: 900;
+    margin-bottom:.2em;
+}
+.main .social-media a{
+    font-size: 1.5em;
+    padding-right: .3em; 
+    color: wheat;
+    display: inline-block;   
+}
+.main .social-media a:hover{
+    color: white;
+}
+.main{
+    background-image: url(../images/cascade-clouds-cool-wallpaper-210186.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+    display: flex;
+    width: 100%;
+    height:100vh;
+    background-attachment: fixed;
+    align-items: center;
+}
+.title{
+     display: flex;
+     justify-content: center;
+     font-size: 2.2em;
+     color: blue;
+     font-weight: 900;
+     margin-bottom: 1.9em;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.content .card{
+    background-color: white;
+    width: 21.25em;
+    box-shadow: 0 5px 25px #eee;
+    border: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: .7s ease;
+}
+.content .card:hover{
+     transform: scale(1.1);
+}
+.icon{
+    color: blue;
+    font-size: 8em;
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: blue;
+    font-size: 1.2em;
+    margin: 10px;
+    font-weight: 700;
+}
+.projects{
+    background-color: rgba(0, 0, 0, 1);
+}
+.projects .content{
+    margin-top: 30px;
+}
+.project-card{
+    background: #fff;
+    border:4px solid white;
+    min-height:9em;
+    width: 20em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+
+.project-card:hover .project-image{
+  opacity: .9;
+}
+.project-image img{
+      width: 100%;
+}
+.project-info{
+    padding: 1em;
+}
+.project-info p{
+    font-size: .8em;
+    color: #000;
+}
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 8px;
+}
+.more-details{
+    text-decoration: none;
+    color: blue;
+}
+.more-details:hover{
+    color: purple;
+}
+.contact .icon{
+  font-size: 4.5em;
+}
+.contact .info h3{
+    color: black;
+}
+.contact .info p{
+    font-size: 1.5em;
+
+}
+.contact .info p:hover{
+    font-weight: 700;
+    color: blueviolet;
+}
+.footer{
+  padding: 1em;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  min-height: 4em;
+  transition: 1s ease; 
+}
+.footer p{
+    color: white;
+    font-weight: 300;
+    font-size: 1em;
+}
+.footer p span{
+    color: blue;
+    font-weight: 900;
+}
+.footer .social-media a{
+    font-size: 1.5em;
+    padding-right: .3em; 
+    color: white;
+    display: inline-block;  
+}
+.footer .social-media a:hover{
+    color: blue;
+}
+
+@media (max-width:1300px){
+    header{
+        padding: 12px 20px;
+    }
+    .navigation a{
+        padding: 0 0 0 10px;
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main h3{
+        font-size: 1.6em;
+    }
+    .main h2{
+        font-size: 1em;
+    }
+    .contect{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+@media (max-width:500px){
+    .navigation a{
+        font-size: .8em;
+    }
+    
+}
+
+
+
+
+
+
+
+
+/* aligin items for vertical=flex-direction column   justify content for horizontal=flex-direction row
